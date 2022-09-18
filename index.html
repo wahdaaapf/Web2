@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Ceyy Commision</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="commis">
+              <h1>Ceyvu</h1>
+              <p>Original Character Commision</p>
+            </div>
+            <nav>
+              <ul class="menu">
+                <li><a href="#home">Home</a>
+                    <ul class="submenu">
+                        <li><a href="#commis">Apa Itu Commision?</a></li>
+                        <li><a href="#gacha">Commision Gacha</a></li>
+                    </ul>
+                </li>
+                <li><a href="#products">Products</a>
+                    <ul class="submenu">
+                        <li><a href="#chibi">Commis Chibi</a></li>
+                        <li><a href="#art">Commis Art</a></li>
+                    </ul>
+                </li>
+                <li><a href="#saya">Saya</a>
+                </li>
+              </ul>
+              <div class="search-box">
+                <input type="text" placeholder="Mau cari apa?">
+                <div class="search-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+          <div class="cancel-icon">
+                  <i class="fas fa-times"></i>
+                </div>
+          <div class="search-data">
+          </div>
+          </div>
+          <script>
+                const searchBox = document.querySelector(".search-box");
+                const searchBtn = document.querySelector(".search-icon");
+                const cancelBtn = document.querySelector(".cancel-icon");
+                const searchInput = document.querySelector("input");
+                const searchData = document.querySelector(".search-data");
+                searchBtn.onclick =()=>{
+                  searchBox.classList.add("active");
+                  searchBtn.classList.add("active");
+                  searchInput.classList.add("active");
+                  cancelBtn.classList.add("active");
+                  searchInput.focus();
+                  if(searchInput.value != ""){
+                    var values = searchInput.value;
+                    searchData.classList.remove("active");
+                    searchData.innerHTML = "Mencari " + "<span style='font-weight: 500;'>" + values + "</span>";
+                  }else{
+                    searchData.textContent = "";
+                  }
+                }
+                cancelBtn.onclick =()=>{
+                  searchBox.classList.remove("active");
+                  searchBtn.classList.remove("active");
+                  searchInput.classList.remove("active");
+                  cancelBtn.classList.remove("active");
+                  searchData.classList.toggle("active");
+                  searchInput.value = "";
+                }
+              </script>
+            </nav>
+        </header>
+
+        <main>
+            <div id="content">
+                <article id="home" class="card">
+                    <h2 style="color: #7a5bb3">Home</h2>
+                    <article id="commis" class="card">
+                        <h4 style="color: #7a5bb3">Apa Itu Commision?</h4>
+                        <p>Komisi (commission) adalah biaya yang dibayarkan oleh trader
+                        atau investor kepada broker atas jasa pemenuhan transaksinya. 
+                        Sebagaimana aturan umumnya, komisi merupakan sumber pendapatan 
+                        utama dari perusahaan, dengan menawarkan kepada klien akses ke 
+                        pasar valuta asing.</p>
+                    </article>
+                    <article id="gacha" class="card">
+                        <h4 style="color: #7a5bb3">Commision Gacha</h4>
+                        <p>Commision gacha dalam mengambil OC menggunakan aplikasi 'Gacha Club' 
+                        atau bisa juga dengan 'Gacha Life'. Dibedakan menjadi dua, commis 
+                        art dan commis chibi. Apa perbedaannya? commis chibi, hasilnya 
+                        lebih mirip dengan bentuk asli dari OC tersebut, sedangkan commis 
+                        art lebih cenderung kebentuk real life.</p>
+                    </article>
+                </article>
+                <article id="product" class="card">
+                    <h2 style="color: #7a5bb3">Products</h2>
+                    <div class="container">
+                        <div class="kotak">
+                        <article id="chibi" class="card">
+                            <h4 style="color: #7a5bb3">Commision Chibi</h4>
+                            <div class="iyaa">
+                            <img src="assets/image/chibi.png" width=200px class="featured-image" alt="chibi">
+                            </div>
+                            <p>
+                                Price Rp.25.000,00 <br>
+                                Only Headshot <br>
+                                <button class="button button1">Buy it</button>
+                            </p>
+                        </article>
+                        </div>
+                        <div class="kotak">
+                            <article id="art" class="card">
+                                <h4 style="color: #7a5bb3">Commision Art</h4>
+                                <div class="iyaa">
+                                <img src="assets/image/art.png" width=200px class="featured-image" alt="chibi">
+                               </div>
+                                <p>
+                                    Price Rp.25.000,00 <br>
+                                    Only Headshot <br>
+                                    <button class="button button1">Buy it</button>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="ceyvu card">
+            <asside class="wahda">
+                <article id="saya profile card">
+                    <header>
+                        <h2 style="color: #7a5bb3">Ceyvu</h2>
+                        <p>Hi, Iam Ceyy!!</p>
+                        <figure>
+                            <img src="assets/image/me.png" width="200px">
+                            <figcaption>me</figcaption>
+                        </figure>
+                    </header>
+                    <section>
+                        <h3>More Information About Me</h3>
+                        <table class="wahda">
+                          <tr>
+                              <th>Whatsapp</th>
+                              <td><a href="https://wa.me/6281515385477">whdaa</a></td>
+                          </tr>
+                          <tr>
+                              <th>Instagram</th>
+                              <td><a href="https://www.instagram.com/wahdaapf/">wahdaapf</a></td>
+                          </tr>
+                          <tr>
+                              <th>Facebook</th>
+                              <td><a href="https://www.facebook.com/wahda.da.33">Wahda Da</a></td>
+                          </tr>
+                          <tr>
+                              <th>Tiktok</th>
+                              <td><a href="https://vt.tiktok.com/ZSdTEbHau/">wahdaapf</a></td>
+                          </tr>
+                      </table>
+                    </section>
+                </article>
+            </asside>
+            </div>
+        </main>
+
+        <footer>
+            <p>Belajar Dasar Pemrograman Copyright &#169; 2022, All Rights Reserved</p>
+        </footer>
+    </body>
+
+</html>
